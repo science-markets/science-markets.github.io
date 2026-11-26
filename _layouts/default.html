@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | escape }}">
+  <link rel="canonical" href="https://science-markets.github.io/">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": {{ site.title | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "url": "https://science-markets.github.io/",
+    "isAccessibleForFree": true,
+    "publisher": {
+      "@type": "Organization",
+      "name": "science.markets",
+      "url": "https://science.markets/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://science-markets.github.io/water-liquid-liquid-critical-point/",
+          "name": "Water's second critical point: what the 2026 experiment shows, and what it doesn't"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://science-markets.github.io/riemann-hypothesis-verified/",
+          "name": "Riemann Hypothesis: what the Lean verification establishes"
+        }
+      ]
+    }
+  }
+  </script>
+  <style>
+    .markdown-body { max-width: 680px; margin: 0 auto; font-size: 17px; line-height: 1.65; }
+    .markdown-body h1 { font-size: 30px; letter-spacing: -0.01em; }
+    .markdown-body li { margin-bottom: 0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container-lg px-3 my-5 markdown-body">
+    {{ content }}
+  </div>
+</body>
+</html>
