@@ -3,5 +3,16 @@
   <url>
     <loc>https://science-markets.github.io/</loc>
     <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://science-markets.github.io/water-liquid-liquid-critical-point/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://science-markets.github.io/riemann-hypothesis-verified/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>1.0</priority>
   </url>
 </urlset>
